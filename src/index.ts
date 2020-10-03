@@ -8,7 +8,7 @@ debug('ts-express:server');
 const port = normalizePort(process.env.PORT || 3000);
 App.set('port', port);
 
-const server = http.createServer(App);
+const server = http.createServer(App); // création du serveur
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
